@@ -50,8 +50,8 @@
             "freq_ef": 4672600000.0
         },
         "Q1": {
-            "freq": 4673080226.695978,
-            "readfreq": 6558667272.727273,
+            "freq": 4673066822.689384,
+            "readfreq": 6558519696.969697,
             "freq_predicted": 4963089500.0,
             "readfreq0": 6557557365.594907,
             "freq_ef": 4400700000.0
@@ -456,12 +456,12 @@
                 "dest": "Q1.qdrv",
                 "twidth": 3.2e-08,
                 "t0": 0.0,
-                "amp": 0.46974466696834694,
+                "amp": 0.46983033420184533,
                 "env": [
                     {
                         "env_func": "DRAG",
                         "paradict": {
-                            "alpha": -1.4645700806557123,
+                            "alpha": -1.3226101743211254,
                             "sigmas": 3,
                             "delta": -268000000.0,
                             "twidth": 3.2e-08
@@ -602,24 +602,24 @@
                 "freq": "Q1.readfreq",
                 "phase": 0.0,
                 "dest": "Q1.rdrv",
-                "twidth": 1e-06,
+                "twidth": 2e-06,
                 "t0": 0.0,
-                "amp": 0.09,
+                "amp": 0.085,
                 "env": [
                     {
-                        "env_func": "cos_edge_square",
+                        "env_func": "custom",
                         "paradict": {
                             "ramp_fraction": 0.01,
-                            "twidth": 1e-06
+                            "twidth": 2e-06
                         }
                     }
                 ]
             },
             {
                 "freq": "Q1.readfreq",
-                "phase": 1.1404525149844846,
+                "phase": 1.8793564022934994,
                 "dest": "Q1.rdlo",
-                "twidth": 1e-06,
+                "twidth": 2e-06,
                 "t0": 2e-07,
                 "amp": 1.0,
                 "env": [
@@ -628,7 +628,7 @@
                         "paradict": {
                             "phase": 0.0,
                             "amplitude": 1.0,
-                            "twidth": 1e-06
+                            "twidth": 2e-06
                         }
                     }
                 ]
