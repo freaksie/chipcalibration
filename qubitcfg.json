@@ -50,8 +50,8 @@
             "freq_ef": 4672600000.0
         },
         "Q1": {
-            "freq": 4673076735.996492,
-            "readfreq": 6558900000.0,
+            "freq": 4673061934.276595,
+            "readfreq": 6558596969.69697,
             "freq_predicted": 4963089500.0,
             "readfreq0": 6557557365.594907,
             "freq_ef": 4400700000.0
@@ -456,12 +456,12 @@
                 "dest": "Q1.qdrv",
                 "twidth": 3.2e-08,
                 "t0": 0.0,
-                "amp": 0.46915599499919425,
+                "amp": 0.4697101787537033,
                 "env": [
                     {
                         "env_func": "DRAG",
                         "paradict": {
-                            "alpha": -1.2886614907898366,
+                            "alpha": -1.34597823928146,
                             "sigmas": 3,
                             "delta": -268000000.0,
                             "twidth": 3.2e-08
@@ -602,24 +602,24 @@
                 "freq": "Q1.readfreq",
                 "phase": 0.0,
                 "dest": "Q1.rdrv",
-                "twidth": 1e-06,
+                "twidth": 1.5e-06,
                 "t0": 0.0,
-                "amp": 0.045,
+                "amp": 0.04,
                 "env": [
                     {
                         "env_func": "cos_edge_square",
                         "paradict": {
                             "ramp_fraction": 0.01,
-                            "twidth": 1e-06
+                            "twidth": 1.5e-06
                         }
                     }
                 ]
             },
             {
                 "freq": "Q1.readfreq",
-                "phase": 0.3772444949713156,
+                "phase": 1.4422303111916825,
                 "dest": "Q1.rdlo",
-                "twidth": 1e-06,
+                "twidth": 1.5e-06,
                 "t0": 2e-07,
                 "amp": 1.0,
                 "env": [
@@ -628,7 +628,7 @@
                         "paradict": {
                             "phase": 0.0,
                             "amplitude": 1.0,
-                            "twidth": 1e-06
+                            "twidth": 1.5e-06
                         }
                     }
                 ]
