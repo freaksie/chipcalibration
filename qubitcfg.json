@@ -2,7 +2,7 @@
     "Qubits": {
         "Q7": {
             "freq": 5620000000.0,
-            "readfreq": 6837383288.575911,
+            "readfreq": 6557853333.333334,
             "freq_predicted": 5707780000.0,
             "readfreq3": 6837890849.262068,
             "readfreq2": 6835180849.262068,
@@ -50,8 +50,8 @@
             "freq_ef": 4672600000.0
         },
         "Q1": {
-            "freq": 4672549613.981026,
-            "readfreq": 6557853333.333334,
+            "freq": 4672558080.729882,
+            "readfreq": 6557883636.363637,
             "freq_predicted": 4963089500.0,
             "readfreq0": 6557557365.594907,
             "freq_ef": 4400700000.0
@@ -456,12 +456,12 @@
                 "dest": "Q1.qdrv",
                 "twidth": 3.2e-08,
                 "t0": 0.0,
-                "amp": 0.4689082694155411,
+                "amp": 0.4691184299269376,
                 "env": [
                     {
                         "env_func": "DRAG",
                         "paradict": {
-                            "alpha": -1.352145617110959,
+                            "alpha": -1.3508909293310045,
                             "sigmas": 3,
                             "delta": -268000000.0,
                             "twidth": 3.2e-08
@@ -604,12 +604,12 @@
                 "dest": "Q1.rdrv",
                 "twidth": 2e-06,
                 "t0": 0.0,
-                "amp": 0.035,
+                "amp": 0.038,
                 "env": [
                     {
                         "env_func": "cos_edge_square",
                         "paradict": {
-                            "ramp_fraction": 0.05,
+                            "ramp_fraction": 0.25,
                             "twidth": 2e-06
                         }
                     }
@@ -617,7 +617,7 @@
             },
             {
                 "freq": "Q1.readfreq",
-                "phase": 0.27773882256038185,
+                "phase": 1.924130834343327,
                 "dest": "Q1.rdlo",
                 "twidth": 2e-06,
                 "t0": 2e-07,
@@ -1571,7 +1571,7 @@
             },
             {
                 "freq": "Q1.readfreq",
-                "phase": 0.8779697433650009,
+                "phase": 2.053192037659092,
                 "dest": "Q7.rdlo",
                 "twidth": 2e-06,
                 "t0": 2e-07,
