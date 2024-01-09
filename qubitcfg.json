@@ -50,15 +50,15 @@
             "freq_ef": 4672600000.0
         },
         "Q1": {
-            "freq": 4672558080.729882,
-            "readfreq": 6557883636.363637,
+            "freq": 4670425033.262403,
+            "readfreq": 6557756666.666668,
             "freq_predicted": 4963089500.0,
             "readfreq0": 6557557365.594907,
             "freq_ef": 4400700000.0
         },
         "Q0": {
-            "freq": 4460627809.461472,
-            "readfreq": 6554350000.0,
+            "freq": 4459190765.426471,
+            "readfreq": 6553712121.212121,
             "readfreq0": 6553826000.000857,
             "freq_predicted": 4504421000.0,
             "freq_ef": 4182558902.85729
@@ -200,12 +200,12 @@
                 "dest": "Q0.qdrv",
                 "twidth": 3.2e-08,
                 "t0": 0.0,
-                "amp": 0.9659442187763502,
+                "amp": 0.9431548182664246,
                 "env": [
                     {
                         "env_func": "DRAG",
                         "paradict": {
-                            "alpha": -0.39016504877867103,
+                            "alpha": 0.5565341099886095,
                             "sigmas": 3,
                             "delta": -268000000.0,
                             "twidth": 3.2e-08
@@ -401,12 +401,12 @@
                 "dest": "Q0.rdrv",
                 "twidth": 2e-06,
                 "t0": 0.0,
-                "amp": 0.075,
+                "amp": 0.045,
                 "env": [
                     {
                         "env_func": "cos_edge_square",
                         "paradict": {
-                            "ramp_fraction": 0.01,
+                            "ramp_fraction": 0.25,
                             "twidth": 2e-06
                         }
                     }
@@ -414,7 +414,7 @@
             },
             {
                 "freq": "Q0.readfreq",
-                "phase": 6.1114987103591165,
+                "phase": 0.1433770672801069,
                 "dest": "Q0.rdlo",
                 "twidth": 2e-06,
                 "t0": 2e-07,
@@ -456,12 +456,12 @@
                 "dest": "Q1.qdrv",
                 "twidth": 3.2e-08,
                 "t0": 0.0,
-                "amp": 0.4692675578780009,
+                "amp": 0.48895692950187897,
                 "env": [
                     {
                         "env_func": "DRAG",
                         "paradict": {
-                            "alpha": -1.3246663676514574,
+                            "alpha": 1.253948387738424,
                             "sigmas": 3,
                             "delta": -268000000.0,
                             "twidth": 3.2e-08
@@ -604,12 +604,12 @@
                 "dest": "Q1.rdrv",
                 "twidth": 2e-06,
                 "t0": 0.0,
-                "amp": 0.035,
+                "amp": 0.045,
                 "env": [
                     {
                         "env_func": "cos_edge_square",
                         "paradict": {
-                            "ramp_fraction": 0.01,
+                            "ramp_fraction": 0.25,
                             "twidth": 2e-06
                         }
                     }
@@ -617,7 +617,7 @@
             },
             {
                 "freq": "Q1.readfreq",
-                "phase": 1.9324556667416317,
+                "phase": 2.386972386817431,
                 "dest": "Q1.rdlo",
                 "twidth": 2e-06,
                 "t0": 2e-07,
@@ -1570,19 +1570,19 @@
                 ]
             },
             {
-                "freq": "Q1.readfreq",
-                "phase": 2.053192037659092,
+                "freq": "Q7.readfreq",
+                "phase": 0.278797174654013,
                 "dest": "Q7.rdlo",
                 "twidth": 2e-06,
                 "t0": 2e-07,
-                "amp": 1.0,
+                "amp": 0.99,
                 "env": [
                     {
-                        "env_func": "square",
+                        "env_func": "arb",
                         "paradict": {
-                            "phase": 0.0,
-                            "amplitude": 1.0,
-                            "twidth": 2e-06
+                            "filename": "envelope.json",
+                            "qubit_id": "Q1",
+                            "path": "chipcalibration/submodules/qchip/X4Y2/sian/"
                         }
                     }
                 ]
